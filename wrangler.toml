@@ -2,17 +2,17 @@ name = "scholar-desk"
 main = "worker/index.js"
 compatibility_date = "2026-11-21"
 compatibility_flags = ["nodejs_compat"]
+
 [assets]
 directory = "./dist"
 binding = "ASSETS"
 not_found_handling = "single-page-application"
+
 [[d1_databases]]
 binding = "DB"
-database_name = "scholar-desk"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
-[[r2_buckets]]
-binding = "VIDEOS"
-bucket_name = "scholar-desk-videos"
+database_name = "scholar-desk-db"
+database_id = "88180a4c-bb2a-4064-908e-7a861935e528"
+
 [vars]
 APP_NAME = "Scholar Desk"
 RAZORPAY_MODE = "test"
