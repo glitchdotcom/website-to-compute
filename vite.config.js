@@ -1,16 +1,1 @@
-import { defineConfig } from "vite";
-
-// https://vitejs.dev/config/
-export default defineConfig(async ({ command, mode }) => {
-  return {
-    build: {
-      outDir: "deploy/_site",
-      rollupOptions: {
-        input: {
-          main: 'index.html',
-          404: '404.html',
-        },
-      }
-    }
-  }
-});
+import { defineConfig } from "vite"; import react from "@vitejs/plugin-react"; export default defineConfig({plugins:[react()]});
